@@ -3,10 +3,9 @@ import Featured from "../../components/featured/Featured";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Widget from "../../components/widget/Widget";
-import List from "../../components/table/List";
+import List from "../../components/table/Table";
 import "./home.scss";
 import React from "react";
-
 
 const home = () => {
   return (
@@ -21,12 +20,12 @@ const home = () => {
           <Widget type="balance" />
         </div>
         <div className="charts">
-          <Featured/>
-          <Chart/>
+          <Featured />
+          <Chart />
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transaction</div>
-     <List/>
+          <List />
         </div>
       </div>
     </div>
